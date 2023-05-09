@@ -102,3 +102,36 @@
  .floating-menu .fab {
     font-size: 1.5rem;
  }
+
+ .blink {
+   animation: blink-animation 1s infinite;
+ }
+
+ @keyframes blink-animation {
+   0% {
+     color: #000;
+   }
+   50% {
+     color: #fff;
+   }
+   100% {
+     color: #000;
+   }
+ }
+
+ 
+ .disappearing-text {
+   animation: disappearing-text 3s ease-in-out infinite;
+   }
+
+   @keyframes disappearing-text {
+   0% {
+        opacity: 1;
+      }
+   50% {
+        opacity: 0;
+      }
+   100% {
+        opacity: 1;
+       }
+}
