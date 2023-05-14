@@ -509,6 +509,28 @@
     <a href="https://www.instagram.com/" class="instagram"><i class="fab fa-instagram"></i></a>
 </div>
 
+<!-- floating chat -->
+<!-- <div class="chat-button">
+  <a href="#">CHAT WITH US</a>
+</div> -->
+<div class="chat-button">
+    <a id = "wplogo" href="https://api.whatsapp.com/send/?phone=8080550271&text&type=phone_number&app_absent=0" target="_blank" rel="noopener">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+</div>
+
+<!-- new chat button -->
+<input type="checkbox" id="check"> 
+<label class="chat-btn" for="check"> 
+    <i class="fab fa-whatsapp comment"></i> <i class="fa fa-close close"></i> 
+</label>
+<div class="wrapper">
+     <div class="chatheader">
+         <h6>Chat Support</h6> </div> <div class="text-center p-2"> <span>Typically replies in minutes!</span><br><br> 
+    </div>
+    <button id="chat-btnclick" class="btn btn-success btn-block">Start Chat</button>
+ </div>
+</div>
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
@@ -516,6 +538,13 @@
 <script src="assets/js/wow.js"></script>
 <script>new WOW().init();</script>
 <script src="assets/js/counter-script.js"></script>
+<script>
+    const chatBtn = document.getElementById('chat-btnclick');
+chatBtn.addEventListener('click', () => {
+   window.open('https://api.whatsapp.com/send/?phone=8080550271&text&type=phone_number&app_absent=0"', '_blank'); 
+});
+
+</script>
 <!-- <script>
     window.onload = function() {
       setTimeout(function() {
