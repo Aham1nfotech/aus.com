@@ -435,6 +435,12 @@ setTimeout(loading, 1000);
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <script src="assets/js/wow.js"></script>
 <script>new WOW().init();</script>
+<!-- code for chatbot integration -->
+<script>
+    const chatBtn = document.getElementById('chat-btnclick');
+chatBtn.addEventListener('click', () => {
+   window.open('https://api.whatsapp.com/send/?phone=+918080550271&text&type=phone_number&app_absent=0"', '_blank'); 
+});
+</script>
 <script src="assets/js/counter-script.js"></script>
-
 <iframe src="about:blank" style="display: none;"></iframe></body></html>
